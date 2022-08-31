@@ -8,7 +8,7 @@ Image.MAX_IMAGE_PIXELS = None
 
 # img = cv2.imread("./ori_img/1004490_mini.jpg", cv2.IMREAD_COLOR)
 # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-img = Image.open('./ori_img/1004589_apply(normal).jpg').convert('RGB')
+img = Image.open('./ori_img/1005701_apply(moderately).jpg').convert('RGB')
 
 w,h = img.size
 stepSize = 400
@@ -22,7 +22,7 @@ for x in range(0, h, stepSize):
         # enhancer = ImageEnhance.Brightness(cropped)
         # cropped = enhancer.enhance(2).convert('RGB')
         #cv2.imwrite('./test_patch/test{},{}.jpg'.format(h+200,w), cropped)
-        cropped.save('./test_patch/1004589_apply(normal)/test{},{}.jpg'.format(x,y))
+        cropped.save('./test_patch/1005701_apply(moderately)/test{},{}.jpg'.format(x,y))
 
 
 
